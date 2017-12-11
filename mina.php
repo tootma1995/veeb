@@ -44,4 +44,11 @@ $tulemus = $var1 === $var4;
 echo 'kas $var1 === $var4? ' . $tulemus . "<br/>";
 $tulemus = $var1 != $var4;
 echo 'kas $var1 != $var4? ' . $tulemus . "<br/>";
+echo '<hr/>';
+$a = 2; $b = 5;
+$c = $a++; $d = $b--;
+echo 'a = ' . $a . ', b = ' . $b . ', c = ' . $c . ', d = ' . $d . '<br/>';
+$a = 2; $b = 5;
+$c = ++$a; $d = --$b;
+echo 'a = ' . $a . ', b = ' . $b . ', c = ' . $c . ', d = ' . $d . '<br/>';
 ?>
