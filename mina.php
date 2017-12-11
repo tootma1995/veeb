@@ -14,7 +14,7 @@
 $norman = 'Norman';
 echo 'Echo: Minu nimi on ' . $norman . ".<br/>"; //käsk
 print 'Print: Minu nimi on '. $norman . '.<br/>'; //funktsioon
-print("Print(): Minu nimi on $norman."); // kahekordsed jutumärkidega näeb muutuja väärtust
+print("Print(): Minu nimi on $norman.<br/>"); // kahekordsed jutumärkidega näeb muutuja väärtust
 
 $var1 = 5;
 $var2 = 5.0;
