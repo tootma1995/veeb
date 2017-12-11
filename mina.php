@@ -34,4 +34,6 @@ echo $var6 . ' - ' . gettype($var6) . '<br/>';
 echo $var7 . ' - ' . gettype($var7) . '<br/>';
 echo $var8 . ' - ' . gettype($var8) . '<br/>';
 
+#test
+
 ?>
