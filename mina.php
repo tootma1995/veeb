@@ -51,4 +51,7 @@ echo 'a = ' . $a . ', b = ' . $b . ', c = ' . $c . ', d = ' . $d . '<br/>';
 $a = 2; $b = 5;
 $c = ++$a; $d = --$b;
 echo 'a = ' . $a . ', b = ' . $b . ', c = ' . $c . ', d = ' . $d . '<br/>';
+// katsetame stringi väärtuse suurendamist
+$s = 5;
+echo ++$s . '<br/>';
 ?>
