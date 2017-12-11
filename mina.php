@@ -54,4 +54,7 @@ echo 'a = ' . $a . ', b = ' . $b . ', c = ' . $c . ', d = ' . $d . '<br/>';
 // katsetame stringi väärtuse suurendamist
 $s = 5;
 echo ++$s . '<br/>';
+// konstantide defineerimine ja kasutamine (ei saa ++, --)
+define('NUMBER', 5);
+echo NUMBER . '<br/>';
 ?>
