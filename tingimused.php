@@ -16,3 +16,25 @@ if($vanus >= 0 and $vanus < 11){
 } else{
     echo 'Oled seenior, kes on '.$vanus.' a. vana.';
 }
+
+echo '<br/>';
+
+// switch
+$sokolaad=array_rand(array('Laima','Kalev','Kinder'),1);
+switch ($sokolaad){
+    case'Kalev':
+        echo 'Super sokolaad';
+        break;
+    case 'Kinder':
+        echo 'Laste lemmik';
+        break;
+    default:
+        echo 'Sobib, kui muud pole';
+        break;
+}
+echo '<br/>';
+// ternary operaator katse
+$pidu = 'hea';
+$pidutseme = ($pidu =='hea') ? 'lähme peole' : 'istume kodus';
+echo $pidutseme.'<br/>';
+?>
