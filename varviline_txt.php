@@ -14,7 +14,7 @@ for($rida=1;$rida<=5;$rida++){
         $juhuHex=dechex($juhuTaisarv);
         $varv = $varv.$juhuHex;
     }
-    echo '<font color="'.$varv.'"> Värviline tekst </font><br/>'; // ei saa aru color="'.$varv.'"
+    echo '<font color="'.$varv.';"> Värviline tekst </font><br/>';
 }
 
 ?>
