@@ -56,5 +56,9 @@ $s = 5;
 echo ++$s . '<br/>';
 // konstantide defineerimine ja kasutamine (ei saa ++, --)
 define('NUMBER', 5);
-echo NUMBER . '<br/>';
+echo 'Konstantne number: ' . NUMBER . '<br/>';
+
+define('Aine_nimetus','PHP alused');
+echo 'Aine nimetus: ' . Aine_nimetus . '<br/>';
+
 ?>
