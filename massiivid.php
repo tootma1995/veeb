@@ -26,15 +26,27 @@ echo '<hr/>';
 
 /* massiiv ül */
 
-function looMassiiv(pikkus){
-    massiiv = array();
-    for($i;pikkus;$++) {
-        massiiv[] = rand(0, 99)
+function looMassiiv($pikkus){
+    $massiiv = array();
+    for($i;$i < $pikkus;$i++) {
+        $massiiv[] = rand(0,99);
     }
-    echo print_r(massiiv);
-    return massiiv;
+    return $massiiv;
 }
 
-looMassiiv(10);
+echo '<pre>';
+echo print_r(looMassiiv(10));
+echo '</pre>';
 
-?>
+/* funk nimega valjastaMassiiv */
+
+function valjastaMassiiv($massiiv){
+    echo "<table border='1'><tr>";
+    foreach($massiiv as $liige){
+        print '<th>' . $liige . '</th><br/>';
+    }
+    echo '</tr></table>';
+}
+
+$s = array(2,3,4,5,6,7,8,9);
+valjastaMassiiv($s);
