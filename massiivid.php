@@ -28,7 +28,7 @@ echo '<hr/>';
 
 function looMassiiv($pikkus){
     $massiiv = array();
-    for($i;$i < $pikkus;$i++) {
+    for($i=0;$i < $pikkus;$i++) {
         $massiiv[] = rand(0,99);
     }
     return $massiiv;
@@ -41,12 +41,32 @@ echo '</pre>';
 /* funk nimega valjastaMassiiv */
 
 function valjastaMassiiv($massiiv){
-    echo "<table border='1'><tr>";
-    foreach($massiiv as $liige){
-        print '<th>' . $liige . '</th><br/>';
-    }
-    echo '</tr></table>';
+    echo "<table border='1'>";
+        echo '<tr>';
+            foreach($massiiv as $liige){
+                print '<td>' . $liige . '</td><br/>';
+            }
+        echo '</tr>';
+    echo '</table>';
 }
 
 $s = array(2,3,4,5,6,7,8,9);
 valjastaMassiiv($s);
+echo '<hr/>';
+
+/* looMassiiv funk */
+
+function loo2DMassiiv($read,$veerud){
+    $massiiv2D=array();
+    for($i = 0;$i<$read;$i++){
+        $massiiv2D[]=array();
+        for($j=0;$j<$veerud;$j++){
+            $massiiv2D[$i][]=rand(0,99);
+        }
+    }
+    return $massiiv2D;
+}
+
+echo '<pre>';
+print_r(loo2DMassiiv(2,3));
+echo '</pre>';
