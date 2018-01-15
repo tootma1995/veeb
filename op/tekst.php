@@ -11,8 +11,19 @@ class tekst
     // klassi muutujad, omadused, variables
     var $sonad = '';
 
+
     // klassimeetodid, class methods
+    /**
+     * tekst constructor.
+     * @param string $sonad
+     */
+    public function __construct($sonad)
+    {
+        $this->maaraTekst($sonad);
+    }
+
     function maaraTekst($s){
         $this->sonad = $s;
     }
+
 }
