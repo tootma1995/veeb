@@ -9,6 +9,8 @@ require_once 'tekst.php';
 
 // loome teksti objekti
 $minuTekst = new tekst();
+// määrame kindla sõnad tekstist
+$minuTekst->maaraTekst('Tere maailm');
 
 // väljastame objekti sisu test kujul
 echo '<pre>';

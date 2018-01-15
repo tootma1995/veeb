@@ -10,4 +10,9 @@ class tekst
 {
     // klassi muutujad, omadused, variables
     var $sonad = '';
+
+    // klassimeetodid, class methods
+    function maaraTekst($s){
+        $this->sonad = $s;
+    }
 }
