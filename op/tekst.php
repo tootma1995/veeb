@@ -26,4 +26,7 @@ class tekst
         $this->sonad = $s;
     }
 
+    function prindiTekst(){
+        echo $this->sonad . '<br/>';
+    }
 }
