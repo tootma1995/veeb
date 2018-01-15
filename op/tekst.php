@@ -17,7 +17,7 @@ class tekst
      * tekst constructor.
      * @param string $sonad
      */
-    public function __construct($sonad)
+    public function __construct($sonad='') // et errorit ei annaks parameetrita
     {
         $this->maaraTekst($sonad);
     }
