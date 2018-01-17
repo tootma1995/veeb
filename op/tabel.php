@@ -23,4 +23,20 @@ class tabel
         $this->veergudearv = count($pealkirjad);
     }
 
+    function lisaRida($rida){
+        if (count($rida) != $this->veergudearv) {
+            return false;
+        }
+        array_push($this->tabelisisu, $rida);
+        return true;
+    }
+
+    function lisaRidaPealkirjadega($ridaPealkirjadega){
+        $jarjestatudRida = array();
+        foreach ($this->pealkirjad as $pealkiri){
+            $jarjestatudRida[] = $ridaPealkirjadega[$pealkiri];
+        }
+        array_push($this->tabelisisu, $jarjestatudRida);
+        return true;
+    }
 }

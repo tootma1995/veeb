@@ -10,6 +10,9 @@ require_once 'tabel.php';
 // loome tabeli objekti
 $minuTabel = new tabel(array('a','b','c','d'));
 
+$minuTabel->lisaRida(array(1, 2, 3, 4));
+$minuTabel->lisaRidaPealkirjadega(array('d'=>1,'c'=>2,'b'=>3,'a'=>4));
+
 echo '<pre>';
 print_r($minuTabel);
 echo '</pre>';
