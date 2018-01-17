@@ -25,7 +25,20 @@ class htmlTabel extends tabel
 
     function prindiTabel(){
         if ($this->taustavarv == ''){
-            parent::prindiTabel();
+            echo '<table border="1">';
+            echo '<tr>';
+            foreach ($this->pealkirjad as $pealkiri){
+                echo '<th>'.$pealkiri.'</th>'.' ';
+            }
+            echo "</tr>";
+            foreach ($this->tabelisisu as $reaElemedid){
+                echo '<tr>';
+                foreach ($reaElemedid as $reaElement){
+                    echo '<td>'.$reaElement.'</td>';
+                }
+                echo "</tr>";
+            }
+            echo '</table>';
 
         } else {
             echo '<table border="1">';
