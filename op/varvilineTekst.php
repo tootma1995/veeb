@@ -21,6 +21,15 @@ class varvilineTekst extends tekst
        $this->tekstiVarv = $varv;
     }
 
+    function prindiTekst()
+    {
+
+        if($this->tekstiVarv == ''){
+            parent::prindiTekst();
+        } else {
+            echo '<font color="'.$this->tekstiVarv.'">'.$this->sonad.'</font><br/>';
+        }
+    }
 
 
 }
