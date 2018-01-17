@@ -34,3 +34,20 @@ echo '</pre>';
 
 // väljastame objekti korralikult
 $varvituTekst->prindiTekst();
+
+
+echo '<hr/>';
+
+require_once 'varvilineTekst.php';
+
+// loome teksti objekti
+// määrame kindla sõnad tekstist
+$roosaTekst = new varvilineTekst('Tere maailm','#ff0066');
+
+// väljastame objekti sisu test kujul
+echo '<pre>';
+print_r($roosaTekst);
+echo '</pre>';
+
+// väljastame objekti korralikult
+$roosaTekst->prindiTekst();
