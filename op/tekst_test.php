@@ -21,6 +21,7 @@ $minuTekst->prindiTekst();
 
 
 
+
 echo '<hr/>';
 
 require_once 'varvilineTekst.php';
@@ -38,9 +39,9 @@ echo '</pre>';
 $varvituTekst->prindiTekst();
 
 
-echo '<hr/>';
 
-require_once 'varvilineTekst.php';
+
+echo '<hr/>';
 
 // loome teksti objekti
 // määrame kindla sõnad tekstist

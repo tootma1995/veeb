@@ -54,10 +54,4 @@ class tabel
         }
         echo '</pre>';
     }
-
-    function htmlTabel(){
-        echo '<table border="1">';
-
-        echo '</table>';
-    }
 }
