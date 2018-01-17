@@ -20,3 +20,4 @@ echo '</pre>';
 
 
 $minuTabel->prindiTabel();
+$minuTabel->htmlTabel();
